@@ -4,8 +4,8 @@ import wikipedia
 from search_wiki import search
 from button_maker import make_button
 admin="904185120"
-TOKEN="1945895613:AAFp0UzlUCIDWfC0y1OjFIYxwbz4ROJuB0k"
-bot=telebot.TeleBot(TOKEN,parse_mode="MARKDOWN")
+from config import token
+bot=telebot.TeleBot(token,parse_mode="MARKDOWN")
 @bot.message_handler(commands=["start"])
 def start(message):
     user=message.from_user
