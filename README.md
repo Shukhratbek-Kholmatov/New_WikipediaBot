@@ -1,2 +1,4 @@
 # New_WikipediaBot
-A simple wikipedia bot.
+🇺🇿Wikipediadan ma'lumot izlaydigan bot.
+
+🇬🇧Wikipedia bot which searches information from wikipedia.
