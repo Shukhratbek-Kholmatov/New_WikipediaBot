@@ -1,5 +1,4 @@
 import telebot
-from telebot import types
 import wikipedia
 from search_wiki import search
 from button_maker import make_button
