@@ -3,7 +3,6 @@ from telebot import types
 import wikipedia
 from search_wiki import search
 from button_maker import make_button
-admin="904185120"
 from config import token
 bot=telebot.TeleBot(token,parse_mode="MARKDOWN")
 @bot.message_handler(commands=["start"])
@@ -11,10 +10,6 @@ def start(message):
     user=message.from_user
     main_button=make_button("main_button")
     bot.send_message(message.chat.id,f"*•Tilni tanlang.\n•Choose language.\n•Выберите язык.*",reply_markup=main_button)
-    if format(user.username)!=None:
-        bot.send_message(admin,f"*@{format(user.username)}\ntomonidan /start bosildi.\nID:\n{message.chat.id}*")
-    else:
-        bot.send_message(admin,f"*{format(user.first_name)}\ntomonidan /start bosildi.\nID:\n{message.chat.id}**")
 @bot.message_handler(commands=["info"])
 def info(message):
     button1=make_button("button1")
