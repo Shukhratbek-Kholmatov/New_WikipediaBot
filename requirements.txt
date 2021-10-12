@@ -1,0 +1,2 @@
+pyTelegramBotAPI=3.7.9
+wikipedia==1.4.0
